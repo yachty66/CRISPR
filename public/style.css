@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container_landing_page{
+    margin: auto;
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top,white 50%,#77FF61 147%);
+}
+
+.container_landing_page_left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+.container_headline_landing_page{
+    height: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.box_landing_page{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.box_landing_page a{
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #77FF61 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #222;
+    font-size: 0.9em;
+    line-height: 1.15em;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
+}
+
+.box_landing_page a:hover{
+    background-position: -99.99% 0;
+}
+
+.container_headline_landing_page_CRISPR{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 7vw;
+}
+
+.container_bullet_points_landing_page{
+    font-size: 1.3vw;  
+    font-family: 'Ubuntu Mono', monospace;
+    display: flex;
+    justify-content: end;
+    height: 25%;
+    padding-top: 5%;
+}
+
+li {
+    height: 15%;
+}
+
+a.underlineH{
+    color: inherit;
+    position: relative;
+}
+
+a.underlineH:before{
+    color: inherit;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #77FF61;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.underlineH:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.container_bullet_points_landing_page_2{
+    width: 90%;
+    height: 60%;
+}
+
+.container_order_button_landing_page{
+    display: flex;
+    justify-content: end;
+    height: 25%;
+}
+
+.container_order_button_landing_page_2{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 10%;
+}
+
+.button1 {
+    background-image: linear-gradient(to top,white,#77FF61 147%);
+    margin-left: auto;
+    /*background-color: #04AA6D;*/
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 4px 2px;
+    box-shadow: 3px 5px 5px #888888;
+    transition: all 1s ease;
+}
+
+.button1:hover {
+    background-color: #000;
+  /*  Making button bigger on hover  */
+    transform: scale(1.5) perspective(1px)
+  }
+
+.container_landing_page_right{
+    /*background-color: beige;*/
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.container_image_landing_page{
+    width:100%;
+    /*background-color: red;*/
+}
+
+.landing_page_image{
+    max-height:100%; 
+    max-width:100%;
+}
+
+@media screen and (min-width: 1440px) {
+    .container_headline_landing_page_CRISPR{
+        font-size: 100.8px;
+    }
+
+    .container_bullet_points_landing_page{
+        font-size: 18.72px;     
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container_landing_page{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container_order_button_landing_page{
+        display: flex;
+        padding-left: 30%;
+        height: 25%;
+        /*background-color: aquamarine;*/
+    }
+
+    .container_bullet_points_landing_page{
+        font-size: 1.5vw;  
+    }
+
+    .container_landing_page_left{
+        background-repeat: no-repeat;
+        background: url("/src/assets/dna.png");
+        background-size:auto 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_landing_page{
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container_landing_page_right{
+        display: flex;
+        flex-direction: column;
+        width: 0%;
+        height: 100%;
+    }
+
+    .landing_page_image{
+        display: none;
+    }
+
+    .container_order_button_landing_page_2{
+
+
+        display: flex;
+        justify-content: start;
+        
+    }
+}
+
+@media screen and (max-width: 579px) {
+    .container_landing_page_left{
+        background: url("/src/assets/dna.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size:auto 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_bullet_points_landing_page{
+        font-size: 2.4vw;
+        padding-left: 2%;  
+
+    }
+
+    .container_headline_landing_page_CRISPR{
+        padding-left: 2%;
+        /*vh = % of the viewport hight*/
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 11vw;   
+        /*background-color: yellowgreen;*/
+    }
+
+    .container_order_button_landing_page_2{
+
+        display: flex;
+
+        
+    }
+
+    .container_order_button_landing_page{
+        display: flex;
+        padding-left: 9%;
+        height: 25%;
+        /*background-color: aquamarine;*/
+    }
+
+    
+}

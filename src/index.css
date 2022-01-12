@@ -232,16 +232,16 @@ ul {
     }
 
     .container_bullet_points_landing_page{
-        font-size: 2.4vw;
-        padding-left: 2%;  
+        font-size: 2.9vw;
+        padding-left: 1%;  
 
     }
 
     .container_headline_landing_page_CRISPR{
-        padding-left: 2%;
+        padding-left: 1%;
         /*vh = % of the viewport hight*/
         font-family: 'Ubuntu Mono', monospace;
-        font-size: 11vw;   
+        font-size: 13vw;   
         /*background-color: yellowgreen;*/
     }
 
@@ -332,7 +332,34 @@ ul {
     position: absolute;
 }
 
+@media screen and (max-width: 1440px) {
+    .container_middle_page{
+        width: 100%;
+    }
+}
 
+@media screen and (max-width: 1310px) {
+    .landing_page_image_2{
+        margin-top: 4%;
+        max-height:60%; 
+        max-width:100%;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .landing_page_image_2{
+        margin-top: 4%;
+        max-height:40%; 
+        max-width:100%;
+    }
+
+    .container_middle_page_text{
+        font-size: 1.7vw;  
+        
+    }
+    
+}
 
 
 

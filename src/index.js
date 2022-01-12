@@ -3,12 +3,7 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-
-
-function test(){
-    document.getElementById("test").style.display = "none";
-}
-
+import "./index.css";
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

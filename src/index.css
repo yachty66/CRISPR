@@ -4,6 +4,10 @@
     height: 100%;
 }
 
+.ignore-css{all:unset;}
+
+
+/*landing page*/
 .container_landing_page{
     margin: auto;
     width: 1440px;
@@ -104,23 +108,22 @@ ul {
 }
 
 .container_order_button_landing_page_2{
-
+    text-align: center;
     display: flex;
     justify-content: flex-end;
     width: 90%;
     height: 10%;
 }
 
-.button1 {
+.button {
+    line-height: 0px;
     background-image: linear-gradient(to top,white,#77FF61 147%);
     margin-left: auto;
     /*background-color: #04AA6D;*/
     border: none;
     color: black;
     padding: 20px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 16px;
     border-radius: 12px;
@@ -129,7 +132,7 @@ ul {
     transition: all 1s ease;
 }
 
-.button1:hover {
+.button:hover {
     background-color: #000;
   /*  Making button bigger on hover  */
     transform: scale(1.5) perspective(1px)
@@ -140,6 +143,10 @@ ul {
     width: 40%;
     height: 100%;
     display: flex;
+
+    /*background: url("/assets/dna.png");
+    background-size:auto 100%;
+    background-position: 100% 100%;*/
 }
 
 .container_image_landing_page{
@@ -182,8 +189,9 @@ ul {
 
     .container_landing_page_left{
         background-repeat: no-repeat;
-        background: url("/src/assets/dna.png");
+        background: url("/assets/dna.png");
         background-size:auto 100%;
+        background-position: 100% 100%;
         display: flex;
         flex-direction: column;
     }
@@ -207,17 +215,14 @@ ul {
     }
 
     .container_order_button_landing_page_2{
-
-
         display: flex;
-        justify-content: start;
-        
+        justify-content: start;   
     }
 }
 
 @media screen and (max-width: 579px) {
     .container_landing_page_left{
-        background: url("/src/assets/dna.png");
+        background: url("/assets/dna.png");
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
@@ -252,7 +257,82 @@ ul {
         padding-left: 9%;
         height: 25%;
         /*background-color: aquamarine;*/
-    }
+    }   
+}
 
+/*middle page*/
+.container_middle_page{
+    margin: auto;
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_middle_page_up{
+    background-image: linear-gradient(to top, #F28118,white);
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to top, #F28118,white);
+}
+
+.container_middle_page_text{
+    font-size: 1.3vw;  
+    font-family: 'Ubuntu Mono', monospace;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.container_middle_page_down{
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+    background: linear-gradient(to bottom, #F28118,white);
+}
+
+.container_middle_page_icons_text{
+    padding-right: 5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_middle_page_icons_text_2{
+    height: 33%;
+    display: flex;
+    flex-direction: column;
     
 }
+
+.container_middle_page_icon{
+    width: 20%;
+    display: flex;
+    padding-right: 20%;
+}
+
+.container_middle_page_text_small{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center; /* align vertical */
+    font-size: 1.3vw;  
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.landing_page_image_2{
+    margin-top: 4%;
+    max-height:90%; 
+    max-width:100%;
+    position: absolute;
+}
+
+
+
+
+

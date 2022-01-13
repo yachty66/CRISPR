@@ -4,6 +4,11 @@
     height: 100%;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .ignore-css{all:unset;}
 
 
@@ -224,8 +229,7 @@ ul {
     .container_landing_page_left{
         background: url("/assets/dna.png");
         background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
+        background-position: left;
         background-size:auto 70%;
         display: flex;
         flex-direction: column;
@@ -234,7 +238,6 @@ ul {
     .container_bullet_points_landing_page{
         font-size: 2.9vw;
         padding-left: 1%;  
-
     }
 
     .container_headline_landing_page_CRISPR{
@@ -246,10 +249,7 @@ ul {
     }
 
     .container_order_button_landing_page_2{
-
-        display: flex;
-
-        
+        display: flex;        
     }
 
     .container_order_button_landing_page{
@@ -267,6 +267,7 @@ ul {
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .container_middle_page_up{
@@ -274,7 +275,6 @@ ul {
     height: 50%;
     display: flex;
     justify-content: flex-end;
-    background: linear-gradient(to top, #F28118,white);
 }
 
 .container_middle_page_text{
@@ -286,13 +286,16 @@ ul {
     align-items: center;
     height: 100%;
     width: 50%;
+    position: relative;
+    z-index: 1;
 }
 
 .container_middle_page_down{
     display: flex;
     justify-content: flex-end;
     height: 50%;
-    background: linear-gradient(to bottom, #F28118,white);
+    background-image: linear-gradient(to bottom, #F28118,white);
+    justify-content: flex-end;
 }
 
 .container_middle_page_icons_text{
@@ -301,6 +304,8 @@ ul {
     width: 50%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .container_middle_page_icons_text_2{
@@ -325,11 +330,34 @@ ul {
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.landing_page_image_2{
-    margin-top: 4%;
-    max-height:90%; 
-    max-width:100%;
+a.underlineH2{
+    color: inherit;
+    position: relative;
+}
+
+a.underlineH2:before{
+    color: inherit;
+    content: "";
     position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #77FF61;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.underlineH2:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.landing_page_image_2{
+    position:absolute;
+    height: auto;
+    width: 50%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 1440px) {
@@ -338,25 +366,57 @@ ul {
     }
 }
 
-@media screen and (max-width: 1310px) {
-    .landing_page_image_2{
-        margin-top: 4%;
-        max-height:60%; 
-        max-width:100%;
-    }
-    
-}
-
 @media screen and (max-width: 900px) {
     .landing_page_image_2{
-        margin-top: 4%;
-        max-height:40%; 
-        max-width:100%;
+        width: 90%;
+    }
+
+    .container_middle_page_icons_text{
+
+        height: 100%;
+        width: 100%;
+        padding-left: 14%;
     }
 
     .container_middle_page_text{
-        font-size: 1.7vw;  
+        font-size: 2vw;  
+        width: 100%;
+        padding-left: 14%;
+        padding-right: 14%;
         
+    }
+
+    .container_middle_page_text_small{
+        margin-top: 20%;
+        font-size: 4vw;  
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .landing_page_image_2{
+        width: 110%;
+        margin-top: 15%;
+    }
+
+    .container_middle_page_icons_text{
+        font-size: 3vw;
+        height: 100%;
+        width: 100%;
+        padding-left: 14%;
+    }
+
+    .container_middle_page_text{
+        font-size: 3vw;  
+        width: 100%;
+        padding-left: 14%;
+        padding-right: 14%;
+        
+    }
+
+    .container_middle_page_text_small{
+        margin-top: 20%;
+        font-size: 5vw;  
     }
     
 }

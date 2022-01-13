@@ -271,7 +271,7 @@ ul {
 }
 
 .container_middle_page_up{
-    background-image: linear-gradient(to top, #F28118,white);
+    background-image: linear-gradient(to top, #F28118 -60%,white);
     height: 50%;
     display: flex;
     justify-content: flex-end;
@@ -294,7 +294,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     height: 50%;
-    background-image: linear-gradient(to bottom, #F28118,white);
+    background-image: linear-gradient(to bottom, #F28118 -60%,white);
     justify-content: flex-end;
 }
 
@@ -328,29 +328,6 @@ ul {
     align-items: center; /* align vertical */
     font-size: 1.3vw;  
     font-family: 'Ubuntu Mono', monospace;
-}
-
-a.underlineH2{
-    color: inherit;
-    position: relative;
-}
-
-a.underlineH2:before{
-    color: inherit;
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #77FF61;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-a.underlineH2:hover:before {
-    visibility: visible;
-    width: 100%;
 }
 
 .landing_page_image_2{
@@ -420,6 +397,179 @@ a.underlineH2:hover:before {
     }
     
 }
+
+/*end page*/
+.container_end_page{
+    margin: auto;
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom,white 50%,#77FF61 147%);
+}
+
+.container_end_page_left_right{
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+.container_end_page_left{
+    height: 100%;
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_end_page_right{
+    height: 100%;
+    width: 50%;
+    float: left;
+    background: url("/assets/bacteria.png") no-repeat;
+    background-size:auto 120%;
+    background-position: 100% 60%;
+    padding-top: 3%;
+}
+
+.container_headline_end_page{
+    height: 10%;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 3.5vw;
+    text-align: right;
+}
+
+.container_headline_end_page a{
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #77FF61 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #222;
+    font-size: 0.9em;
+    line-height: 1.15em;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
+}
+
+.container_headline_end_page a:hover{
+    background-position: -99.99% 0;
+}
+
+.container_end_page_text{
+    width: 100%;
+    height: 18%;
+    padding-top: 3%;
+}
+
+.container_end_page_text_icon{
+    width: 20%;
+    float: right;
+}
+
+.container_end_page_text_text{
+    float: right;
+    width: 20%;
+    margin-right: 20%;
+}
+
+.container_end_page_footer{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_end_page_footer_icons_text_row{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container_end_page_footer_icons_text{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container_end_page_footer_icon{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.container_end_page_footer_text{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.2vw;
+}
+
+a.underlineH2{
+    color: inherit;
+    position: relative;
+}
+
+a.underlineH2:before{
+    color: inherit;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #77FF61;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.underlineH2:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.container_end_page_footer_stripe{
+    margin-top: 1%;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+}
+
+.container_end_page_footer_end{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_end_page_privacy{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: 5%;
+}
+
+.container_end_page_imprint{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -147,6 +147,56 @@ const App = () => {
               </div>
             </div>
           </div>
+
+          <div class="container_end_page">
+            <div class="container_end_page_left_right">
+            <div class="container_end_page_left">
+              <div class="container_headline_end_page"><a>What you will learn</a></div>
+              <div class="container_end_page_text">
+                <div class="container_end_page_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <img src={'/assets/checkmark.svg'} alt="Logo" class="container_end_page_text_icon"/>
+              </div>
+              <div class="container_end_page_text">
+                <div class="container_end_page_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <img src={'/assets/checkmark.svg'} alt="Logo" class="container_end_page_text_icon"/>
+              </div>
+              <div class="container_end_page_text">
+                <div class="container_end_page_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <img src={'/assets/checkmark.svg'} alt="Logo" class="container_end_page_text_icon"/>
+              </div>
+              <div class="container_end_page_text">
+                <div class="container_end_page_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <img src={'/assets/checkmark.svg'} alt="Logo" class="container_end_page_text_icon"/>
+              </div>
+            </div>
+            <div class="container_end_page_right"></div>
+            </div>
+            <div class="container_end_page_footer">
+              <div class="container_end_page_footer_icons_text_row">
+                <div class="container_end_page_footer_icons_text">
+                  <div class="container_end_page_footer_icon"><img src={'/assets/question.svg'} alt="Logo" /></div>
+                  <div class="container_end_page_footer_text"><a class="underlineH2">Contact</a></div>
+                </div>
+                <div class="container_end_page_footer_icons_text">
+                  <div class="container_end_page_footer_icon"><img src={'/assets/pay.svg'} alt="Logo" /></div>
+                  <div class="container_end_page_footer_stripe"><img src={'/assets/payment.svg'} alt="Logo"/></div>
+                </div>
+                <div class="container_end_page_footer_icons_text">
+                  <div class="container_end_page_footer_icon"><img src={'/assets/delivery.svg'} alt="Logo" /></div>
+                  <div class="container_end_page_footer_text"><a class="underlineH2">Free delivery</a></div>
+                </div>
+              </div>
+              <div class="container_end_page_footer_end">
+                <div class="container_end_page_privacy"><a class="underlineH2">Privacy</a></div>
+                <div class="container_end_page_imprint"><a class="underlineH2">Imprint</a></div>
+              </div>
+            </div>
+            
+
+          </div>
+
+
+
           </>
 
 

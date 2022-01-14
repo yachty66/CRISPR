@@ -341,6 +341,19 @@ ul {
     margin-top: 5%;
 }
 
+@media screen and (min-width: 1440px) {
+    .container_middle_page_text{
+        font-size: 18.72px;
+    }
+
+    .container_middle_page_text_small{
+        font-size: 18.72px;
+    }
+
+    
+}
+
+
 @media screen and (max-width: 1440px) {
     .container_middle_page{
         width: 100%;
@@ -408,7 +421,7 @@ ul {
     width: 1440px;
     height: 100%;
     display: flex;
-    float: left;
+
     flex-direction: column;
     background-image: linear-gradient(to bottom,white 50%,#77FF61 147%);
 }
@@ -497,7 +510,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .container_end_page_footer_icon{
@@ -566,6 +578,38 @@ a.underlineH2:hover:before {
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
 
+}
+
+@media screen and (min-width: 1440px) {
+    .container_headline_end_page{
+        font-size: 50.4px;
+    }
+
+    .container_middle_page_text_small{
+        font-size: 18.72px;
+    }
+
+    .container_end_page_footer_text{
+        font-size: 17.28px;
+    }
+
+    .container_end_page_right{
+        max-width: 1000px;
+    }
+
+
+    .container_end_page_right{
+        background-size: contain;
+        height: 100%;
+        width: 50%;
+        float: left;
+        background: url("/assets/bacteria.png") no-repeat;
+        background-size:auto 120%;
+        background-position: 100% 60%;
+        padding-top: 3%;
+    }
+
+    
 }
 
 @media screen and (max-width: 1440px) {

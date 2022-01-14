@@ -100,7 +100,7 @@ const App = () => {
                 <div class="box_landing_page">
                   <div></div>
                   <div></div>
-                  <div class="container_headline_landing_page_CRISPR"><a>CRISPR</a> <br /> <a>EDUCATION KIT</a></div>
+                  <div class="container_headline_landing_page_CRISPR"><a>CRISPR</a> <br/> <a>EDUCATION KIT</a></div>
                   <div></div>
                 </div>
               </div>
@@ -108,7 +108,9 @@ const App = () => {
                 <div class="container_bullet_points_landing_page_2">
                   <ul>
                     <li><a class="underlineH">Nuts and bolts CRISPR - Cas9</a></li>
-                    <li><a class="underlineH">Scientific identity and promotion for STEM interest</a></li>
+                    <br/>
+                    <li><a class="underlineH">Scientific identity for STEM interest</a></li>
+                    <br/>
                     <li><a class="underlineH">Create your own bio systems</a></li>
                   </ul>
                 </div>

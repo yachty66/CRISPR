@@ -6,7 +6,7 @@
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+
 }
 
 .ignore-css{all:unset;}
@@ -14,6 +14,7 @@ html, body {
 
 /*landing page*/
 .container_landing_page{
+    background-color: turquoise;
     margin: auto;
     width: 1440px;
     height: 100%;
@@ -182,15 +183,26 @@ ul {
 }
 
 @media screen and (max-width: 1000px) {
+    .container_headline_landing_page_CRISPR{
+        font-size: 10vw;
+    }
+
     .container_order_button_landing_page{
         display: flex;
-        padding-left: 30%;
         height: 25%;
-        /*background-color: aquamarine;*/
+    }
+
+    .container_order_button_landing_page_2{
+        display: flex;
+        height: 25%;
+        width: 100%;
+        justify-content: center;
+        align-items:center;/*NEW*/
+
     }
 
     .container_bullet_points_landing_page{
-        font-size: 1.5vw;  
+        font-size: 3vw;  
     }
 
     .container_landing_page_left{
@@ -200,13 +212,7 @@ ul {
         background-position: center center;
         display: flex;
         flex-direction: column;
-    }
-
-    .container_landing_page{
-        width: 1440px;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
+        width: 100%;
     }
 
     .container_landing_page_right{
@@ -219,36 +225,27 @@ ul {
     .landing_page_image{
         display: none;
     }
-
-    .container_order_button_landing_page_2{
-        display: flex;
-        justify-content: start;   
-    }
 }
 
 @media screen and (max-width: 579px) {
     
 
     .container_landing_page_left{
-        background: url("/assets/dna.png") left;
-        background-repeat: no-repeat;
-        margin-right: 20%;
-
 
         background-size:auto 70%;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
+        background-repeat: no-repeat;   
     }
 
     .container_bullet_points_landing_page{
-        font-size: 2.9vw;
-        padding-left: 1%;  
+
+        font-size: 3vw;
+
+        margin-left: 5%;
+
     }
 
     .container_headline_landing_page_CRISPR{
-        padding-left: 1%;
+        padding-left: 5%;
         /*vh = % of the viewport hight*/
         font-family: 'Ubuntu Mono', monospace;
         font-size: 13vw;   
@@ -261,7 +258,6 @@ ul {
 
     .container_order_button_landing_page{
         display: flex;
-        padding-left: 9%;
         height: 25%;
         /*background-color: aquamarine;*/
     }   
@@ -285,6 +281,7 @@ ul {
 }
 
 .container_middle_page_text{
+    margin-top: 5%;
     font-size: 1.3vw;  
     font-family: 'Ubuntu Mono', monospace;
     padding-right: 5%;
@@ -716,6 +713,10 @@ a.underlineH2:hover:before {
         width: 100%;
         margin-top: 0%;
 
+    }
+
+    .container_end_page_footer_text{
+        font-size: 2.5vw;
     }
 
 

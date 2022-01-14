@@ -165,6 +165,7 @@ ul {
 }
 
 @media screen and (min-width: 1440px) {
+
     .container_headline_landing_page_CRISPR{
         font-size: 100.8px;
     }
@@ -196,7 +197,7 @@ ul {
         background-repeat: no-repeat;
         background: url("/assets/dna.png");
         background-size:auto 100%;
-        background-position: 100% 100%;
+        background-position: center center;
         display: flex;
         flex-direction: column;
     }
@@ -226,13 +227,19 @@ ul {
 }
 
 @media screen and (max-width: 579px) {
+    
+
     .container_landing_page_left{
-        background: url("/assets/dna.png");
+        background: url("/assets/dna.png") left;
         background-repeat: no-repeat;
-        background-position: left;
+        margin-right: 20%;
+
+
         background-size:auto 70%;
         display: flex;
         flex-direction: column;
+        width: 100%;
+
     }
 
     .container_bullet_points_landing_page{
@@ -467,9 +474,10 @@ ul {
 }
 
 .container_end_page_text_text{
+    font-family: 'Ubuntu Mono', monospace;
     float: right;
-    width: 20%;
-    margin-right: 20%;
+    width: 40%;
+    margin-right: 10%;
 }
 
 .container_end_page_footer{
@@ -563,9 +571,155 @@ a.underlineH2:hover:before {
 
 }
 
+@media screen and (max-width: 1440px) {
+    .container_end_page{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .container_end_page_right{
+        width: 40%;
+        background-position: right;
+        background-size:auto 90%;
+        z-index: 3;
+        position: relative;
+    
+    }
+
+    .container_end_page_left{
+        width: 60%;
+        background-position: right;
+    
+    }
+}
+
+@media screen and (max-width: 1158px) {
+    .container_end_page_right{
+        width: 40%;
+        background-position: right;
+        background-size:auto 70%;
+        z-index: 3;
+        position: relative;
+    
+    }
+
+    .container_end_page_left{
+        width: 65%;
+        background-position: right;
+    
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .container_end_page{
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    .container_end_page_left{
+        width: 100%;
+        background: url("/assets/bacteria.png") no-repeat;
+        background-size:auto 120%;
+        background-position: center center;
+        padding-top: 3%;
+        align-items: center;
+        float: left;
+        display: flex;
+
+    }
+    
+    .container_end_page_right{
+        width: 0%;
+    }
+
+    .container_end_page_text_icon{
+        width: 20%;
+        float: right;
+    }
+    
+    .container_end_page_text_text{
+        font-family: 'Ubuntu Mono', monospace;
+        float: right;
+        width: 40%;
+        margin-right: 20%;
+    }
+
+    .container_headline_end_page{
+        height: 10%;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 6vw;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container_end_page{
+        width: 100%;
+
+    }
+
+    .container_end_page_left{
+        margin-top: 10%;
+        width: 100%;
+        background: url("/assets/bacteria.png") no-repeat;
+        background-size:auto 80%;
+        background-position: center center;
+        padding-top: 3%;
+        align-items: center;
+        float: left;
+        display: flex;
+
+    }
+    
+    .container_end_page_right{
+        width: 0%;
+    }
+
+    .container_end_page_text_icon{
+        width: 20%;
+        float: right;
+    }
+    
+    .container_end_page_text_text{
+        font-family: 'Ubuntu Mono', monospace;
+        float: right;
+        width: 50%;
+        margin-right: 20%;
+        font-size: 3.5vw;
+    }
+
+    .container_headline_end_page{
+        height: 10%;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 6vw;
+        text-align: right;
+    }
+
+    .container_end_page_footer_text{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 1.5vw;
+    }
+
+    .container_end_page_footer{
+        padding-top: 10%;
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container_end_page{
+        width: 100%;
+        margin-top: 0%;
+
+    }
 
 
-
+}
 
 
 

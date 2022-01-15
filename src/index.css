@@ -122,13 +122,16 @@ ul {
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 0px;
     background-image: linear-gradient(to top,white,#77FF61 147%);
     margin-left: auto;
     /*background-color: #04AA6D;*/
     border: none;
     color: black;
-    padding: 20px;
+    padding: 5px;
     text-decoration: none;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 16px;
@@ -569,7 +572,7 @@ a.underlineH2:hover:before {
     height: 100%;
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
-    margin-right: 5%;
+    margin-right: 20%;
 }
 
 .container_end_page_imprint{
@@ -695,6 +698,14 @@ a.underlineH2:hover:before {
 }
 
 @media screen and (max-width: 520px) {
+    .container_end_page_privacy{
+        font-size: 10px;
+    }
+    
+    .container_end_page_imprint{
+        font-size: 10px;
+    
+    }
     .container_end_page{
         width: 100%;
 

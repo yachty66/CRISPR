@@ -11,7 +11,6 @@ html, body {
 
 .ignore-css{all:unset;}
 
-
 /*landing page*/
 .container_landing_page{
     background-color: turquoise;
@@ -128,7 +127,6 @@ ul {
     line-height: 0px;
     background-image: linear-gradient(to top,white,#77FF61 147%);
     margin-left: auto;
-    /*background-color: #04AA6D;*/
     border: none;
     color: black;
     padding: 5px;
@@ -143,24 +141,17 @@ ul {
 
 .button:hover {
     background-color: #000;
-  /*  Making button bigger on hover  */
     transform: scale(1.5) perspective(1px)
   }
 
 .container_landing_page_right{
-    /*background-color: beige;*/
     width: 40%;
     height: 100%;
     display: flex;
-
-    /*background: url("/assets/dna.png");
-    background-size:auto 100%;
-    background-position: 100% 100%;*/
 }
 
 .container_image_landing_page{
     width:100%;
-    /*background-color: red;*/
 }
 
 .landing_page_image{
@@ -169,7 +160,6 @@ ul {
 }
 
 @media screen and (min-width: 1440px) {
-
     .container_headline_landing_page_CRISPR{
         font-size: 100.8px;
     }
@@ -200,8 +190,7 @@ ul {
         height: 25%;
         width: 100%;
         justify-content: center;
-        align-items:center;/*NEW*/
-
+        align-items:center;
     }
 
     .container_bullet_points_landing_page{
@@ -231,28 +220,20 @@ ul {
 }
 
 @media screen and (max-width: 579px) {
-    
-
     .container_landing_page_left{
-
         background-size:auto 70%;
         background-repeat: no-repeat;   
     }
 
     .container_bullet_points_landing_page{
-
         font-size: 3vw;
-
         margin-left: 5%;
-
     }
 
     .container_headline_landing_page_CRISPR{
         padding-left: 5%;
-        /*vh = % of the viewport hight*/
         font-family: 'Ubuntu Mono', monospace;
         font-size: 13vw;   
-        /*background-color: yellowgreen;*/
     }
 
     .container_order_button_landing_page_2{
@@ -262,7 +243,6 @@ ul {
     .container_order_button_landing_page{
         display: flex;
         height: 25%;
-        /*background-color: aquamarine;*/
     }   
 }
 
@@ -289,7 +269,7 @@ ul {
     font-family: 'Ubuntu Mono', monospace;
     padding-right: 5%;
     display: flex;
-    justify-content: center; /* align horizontal */
+    justify-content: center; 
     align-items: center;
     height: 100%;
     width: 50%;
@@ -319,7 +299,6 @@ ul {
     height: 33%;
     display: flex;
     flex-direction: column;
-    
 }
 
 .container_middle_page_icon{
@@ -352,8 +331,6 @@ ul {
     .container_middle_page_text_small{
         font-size: 18.72px;
     }
-
-    
 }
 
 
@@ -369,7 +346,6 @@ ul {
     }
 
     .container_middle_page_icons_text{
-
         height: 100%;
         width: 100%;
         padding-left: 14%;
@@ -380,7 +356,6 @@ ul {
         width: 100%;
         padding-left: 14%;
         padding-right: 14%;
-        
     }
 
     .container_middle_page_text_small{
@@ -408,7 +383,6 @@ ul {
         width: 100%;
         padding-left: 14%;
         padding-right: 14%;
-        
     }
 
     .container_middle_page_text_small{
@@ -424,7 +398,6 @@ ul {
     width: 1440px;
     height: 100%;
     display: flex;
-
     flex-direction: column;
     background-image: linear-gradient(to bottom,white 50%,#77FF61 147%);
 }
@@ -580,7 +553,6 @@ a.underlineH2:hover:before {
     height: 100%;
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -600,7 +572,6 @@ a.underlineH2:hover:before {
         max-width: 1000px;
     }
 
-
     .container_end_page_right{
         background-size: contain;
         height: 100%;
@@ -611,8 +582,6 @@ a.underlineH2:hover:before {
         background-position: 100% 60%;
         padding-top: 3%;
     }
-
-    
 }
 
 @media screen and (max-width: 1440px) {
@@ -645,13 +614,11 @@ a.underlineH2:hover:before {
         background-size:auto 70%;
         z-index: 3;
         position: relative;
-    
     }
 
     .container_end_page_left{
         width: 65%;
         background-position: right;
-    
     }
 }
 
@@ -670,7 +637,6 @@ a.underlineH2:hover:before {
         align-items: center;
         float: left;
         display: flex;
-
     }
     
     .container_end_page_right{
@@ -704,11 +670,9 @@ a.underlineH2:hover:before {
     
     .container_end_page_imprint{
         font-size: 10px;
-    
     }
     .container_end_page{
         width: 100%;
-
     }
 
     .container_end_page_left{
@@ -721,7 +685,6 @@ a.underlineH2:hover:before {
         align-items: center;
         float: left;
         display: flex;
-
     }
     
     .container_end_page_right{
@@ -767,14 +730,11 @@ a.underlineH2:hover:before {
     .container_end_page{
         width: 100%;
         margin-top: 0%;
-
     }
 
     .container_end_page_footer_text{
         font-size: 2.5vw;
     }
-
-
 }
 
 

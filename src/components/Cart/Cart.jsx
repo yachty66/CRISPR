@@ -4,12 +4,22 @@ import { Link } from 'react-router-dom';
 
 import CartItem from './CartItem/CartItem';
 import useStyles from './styles';
+import Commerce from '@chec/commerce.js';
+
+export const commerce = new Commerce(process.env.REACT_APP_CHEC_PUBLIC_KEY, true);
 
 const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart}) => {
+
   const classes = useStyles();
+  if(cart.total_items < 1){
+    commerce.cart.add('prod_mOVKl4G9z35prR', 1);
+    window.location.reload();
+  }
 
-  if (!cart.line_items) return 'Loading';
-
+  if (!cart.line_items){
+    return 'Loading';
+  } 
+  
   return (
     <Container>
       <div className={classes.toolbar} />

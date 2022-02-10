@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { CssBaseline, IconButton} from '@material-ui/core';
+import { CssBaseline, IconButton, CardActions, Button} from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Products, Cart, Checkout, Toggle } from './components';
 //import { commerce } from './lib/commerce';
 import { Link } from 'react-router-dom';
+import useStyles from './components/Cart/CartItem/styles';
 
 import Commerce from '@chec/commerce.js';
 import createHistory from 'history/createBrowserHistory'
@@ -13,21 +14,14 @@ const history = createHistory();
 export const commerce = new Commerce(process.env.REACT_APP_CHEC_PUBLIC_KEY, true);
  
 const App = ({item}) => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  //const [mobileOpen, setMobileOpen] = React.useState(false);
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
   const [showCheckout, setShowCheckout] = useState(false);
   const [visible, setVisible] = useState(true);  // visibility state
-
-  function refreshPage(){ 
-    window.location.reload(); 
-  }
-
-  function setClicked(v){
-    commerce.cart.add('prod_mOVKl4G9z35prR', 1).then((response) => console.log(response));
-  }
+  const classes = useStyles();
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -39,9 +33,11 @@ const App = ({item}) => {
   };
 
   const handleAddToCart = async (productId, quantity) => {
-    const item = await commerce.cart.add(productId, quantity);
-    setCart(item.cart);
-  };
+    if(cart.total_items < 1){
+      const item = await commerce.cart.add(productId, quantity);
+      setCart(item.cart);
+    }
+  }
 
   const handleUpdateCartQty = async (lineItemId, quantity) => {
     const response = await commerce.cart.update(lineItemId, { quantity });
@@ -50,19 +46,16 @@ const App = ({item}) => {
 
   const handleRemoveFromCart = async (lineItemId) => {
     const response = await commerce.cart.remove(lineItemId);
-
     setCart(response.cart);
   };
 
   const handleEmptyCart = async () => {
     const response = await commerce.cart.empty();
-
     setCart(response.cart);
   };
 
   const refreshCart = async () => {
     const newCart = await commerce.cart.refresh();
-
     setCart(newCart);
   };
 
@@ -81,9 +74,8 @@ const App = ({item}) => {
   useEffect(() => {
     fetchProducts();
     fetchCart();
-    test();
   }, []);
- 
+
   return (
     <Router forceRefresh={true}>
       <Switch>
@@ -113,9 +105,7 @@ const App = ({item}) => {
               </div>
               <div class="container_order_button_landing_page">
                 <div class="container_order_button_landing_page_2">
-                  <IconButton class="button" component={Link} to="/cart" onClick={() => { setShowCheckout(true); setClicked(true);} }>
-                    order now
-                  </IconButton>
+                  <IconButton class="button" component={Link} to="/cart" onClick={() => {setShowCheckout(true); handleAddToCart('prod_mOVKl4G9z35prR', 1);}}>order now</IconButton>
                 </div>
               </div>
             </div>
@@ -193,7 +183,7 @@ const App = ({item}) => {
         </Route>
         <div style={{ display: 'flex' }} class="ignore-css">
         <Route exact path="/cart">
-          <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
+          <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} handleAddToCart onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
         </Route>
         <CssBaseline />
         <Route path="/checkout" exact>
@@ -204,5 +194,4 @@ const App = ({item}) => {
     </Router>
   );
 };
-
 export default App;
